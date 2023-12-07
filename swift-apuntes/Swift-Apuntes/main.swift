@@ -39,5 +39,6 @@ let user = ("Swift", "Beta")
 
 let (brandName, brandSurname) = (user.0, user.1)
 
-strintToNumber();
+//strintToNumber();
+listas();
 //: [Next](@next)
