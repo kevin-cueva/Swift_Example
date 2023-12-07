@@ -40,4 +40,34 @@ func listas(){
     arrayConValores.reverse() // revierte el orden
     arrayConValores.shuffle() //Orden aleatorio de los elementos
 }
+
+///(Set) es una colección no ordenada de valores únicos del mismo tipo. La principal función de los conjuntos es proporcionar una estructura de datos que garantice la unicidad de sus elementos.
+func setColeccion(){
+    
+    var setString = Set(["1", "2", "3"]);
+    var setString2 = Set(arrayLiteral: "1","2","3");
+    print("Canntidad de elementos de la collecion tipo set: \(setString.count)")
+    
+    /*if setString2.isEmpty{
+        print("VACIO")
+    }else{
+        print("NO VACIO")
+    }*/
+    
+    //Añadir
+    setString.insert("4")
+    //Eliminar
+    setString.remove("3")
+    //Buscar
+    setString.contains("1") //True si lo encuentra
+    
+    //Recorrer coleccion
+    /*for value in setString{
+        print(value)
+    };*/
+    //forEach
+    /*setString.forEach{numero in
+        print(numero)
+    }*/
+}
  
