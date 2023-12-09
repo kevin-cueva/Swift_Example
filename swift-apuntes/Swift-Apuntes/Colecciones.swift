@@ -49,10 +49,10 @@ func setColeccion(){
     print("Canntidad de elementos de la collecion tipo set: \(setString.count)")
     
     /*if setString2.isEmpty{
-        print("VACIO")
-    }else{
-        print("NO VACIO")
-    }*/
+     print("VACIO")
+     }else{
+     print("NO VACIO")
+     }*/
     
     //Añadir
     setString.insert("4")
@@ -63,11 +63,36 @@ func setColeccion(){
     
     //Recorrer coleccion
     /*for value in setString{
-        print(value)
-    };*/
+     print(value)
+     };*/
     //forEach
     /*setString.forEach{numero in
-        print(numero)
-    }*/
+     print(numero)
+     }*/
 }
  
+func diccionario(){
+    var diccionario = [String: String](); //Declaracion
+    var diccionarioVacio : [String: String] = [:] //Diccionario vacio
+    var diccinaryWithValue:[String:String]=[
+                                            "name":"C++",
+                                            "type":"compiled"
+                                            ];
+    print("--- DICCIONARY IN SWIFT -----\n");
+    print("Count Keys \(diccinaryWithValue.keys.count) items");
+    diccinaryWithValue.isEmpty ? print("It's emphy"):print("It isn't empty");
+    //Añadir elemento
+    diccinaryWithValue["level"] = "Mid level";
+    //Cambia Valor de una key
+    if let oldValue = diccinaryWithValue.updateValue("Low level", forKey: "level"){
+        print("The old value for level was \(oldValue)")
+    }
+    //Borrar valor en una key
+    if let removeValue = diccinaryWithValue.removeValue(forKey: "level"){
+        print("Value remove for level was \(removeValue)")
+    }
+    diccinaryWithValue["name"] = nil;
+    //Pedir valor
+    let valor = diccinaryWithValue["type"]; //La variable es de tipo opcional porque tambien los dicc tienen nil
+    
+}
