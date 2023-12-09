@@ -44,5 +44,5 @@ listas();
 setColeccion();
 diccionario();
 Controladores();
-
+Funciones();
 //: [Next](@next)
