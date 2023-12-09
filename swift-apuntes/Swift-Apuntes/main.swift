@@ -43,4 +43,6 @@ let (brandName, brandSurname) = (user.0, user.1)
 listas();
 setColeccion();
 diccionario();
+Controladores();
+
 //: [Next](@next)
