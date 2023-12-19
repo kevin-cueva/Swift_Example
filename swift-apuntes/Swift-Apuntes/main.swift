@@ -40,9 +40,16 @@ let user = ("Swift", "Beta")
 let (brandName, brandSurname) = (user.0, user.1)
 
 //strintToNumber();
-listas();
-setColeccion();
-diccionario();
-Controladores();
-Funciones();
+//listas();
+//setColeccion();
+//diccionario();
+//Controladores();
+//Funciones();
+
+//Crear instancias de Class y Struct
+let someClass = SomeClass(name: "Swift Class")
+let someStruct = SomeStruct(name: "Swift Struct")
+
+someClass.printMessageProtocol()
+//someStruct.printMessage()
 //: [Next](@next)
